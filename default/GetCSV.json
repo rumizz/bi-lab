@@ -828,7 +828,7 @@
         "Include File Attributes" : "true",
         "Input Directory Location" : "Local",
         "listing-strategy" : "none",
-        "Input Directory" : "/opt/nifi/nifi-current/input/ecommerce",
+        "Input Directory" : "#{Input Directory}",
         "target-system-timestamp-precision" : "auto-detect",
         "track-performance" : "false",
         "max-performance-metrics" : "100000",
@@ -1192,7 +1192,13 @@
       "componentType" : "PARAMETER_CONTEXT",
       "inheritedParameterContexts" : [ ],
       "name" : "csv read parameters",
-      "parameters" : [ ]
+      "parameters" : [ {
+        "description" : "",
+        "name" : "Input Directory",
+        "provided" : false,
+        "sensitive" : false,
+        "value" : "/opt/nifi/nifi-current/input/ecommerce"
+      } ]
     }
   },
   "parameterProviders" : { },
