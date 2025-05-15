@@ -32,39 +32,6 @@
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
       "bends" : [ {
-        "x" : -704.0,
-        "y" : 1256.0
-      } ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "c048393b-0196-1000-d3fb-7fdd16551144",
-        "name" : "Funnel",
-        "type" : "FUNNEL"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "a62345b3-80c8-3e91-be57-6db5c890627d",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "unmatched" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "c049e072-0196-1000-f4b4-94d7cc1378bb",
-        "name" : "LookupRecord",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 0
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ {
         "x" : 435.20034483431573,
         "y" : -166.13320179424625
       } ],
@@ -91,36 +58,6 @@
         "groupId" : "flow-contents-group",
         "id" : "c0483938-0196-1000-50ee-277b458a1b68",
         "name" : "QueryRecord",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 0
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "d35a5d5a-0196-1000-9feb-ee6d1e731d35",
-        "name" : "Funnel",
-        "type" : "FUNNEL"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "d35a5d5c-0196-1000-3874-6607d050dc73",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "failure" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "d35a5d59-0196-1000-6059-7670693641fb",
-        "name" : "LookupRecord",
         "type" : "PROCESSOR"
       },
       "zIndex" : 0
@@ -211,36 +148,6 @@
         "id" : "d356103e-0196-1000-e0cd-73aaa410ce53",
         "name" : "records",
         "type" : "OUTPUT_PORT"
-      },
-      "zIndex" : 0
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "c0483938-0196-1000-50ee-277b458a1b68",
-        "name" : "QueryRecord",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "c0483952-0196-1000-80c7-9f69eae20806",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "c048393d-0196-1000-178b-d3b6bb05b56e",
-        "name" : "Funnel",
-        "type" : "FUNNEL"
       },
       "zIndex" : 0
     }, {
@@ -496,6 +403,36 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "d35a5d5a-0196-1000-9feb-ee6d1e731d35",
+        "name" : "Funnel",
+        "type" : "FUNNEL"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "516e0d19-b8cb-3f3b-8c9a-48976f1bb953",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure", "unmatched" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "d35a5d59-0196-1000-6059-7670693641fb",
+        "name" : "LookupRecord",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "53bc0e73-214b-30d9-b04a-bca3eec0ce34",
         "name" : "Funnel",
         "type" : "FUNNEL"
@@ -514,72 +451,6 @@
         "comments" : "",
         "groupId" : "flow-contents-group",
         "id" : "c057dfff-0196-1000-0d1c-05518afc9a97",
-        "name" : "LookupRecord",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 0
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ {
-        "x" : -568.0,
-        "y" : 573.0
-      } ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "d35a5d5a-0196-1000-9feb-ee6d1e731d35",
-        "name" : "Funnel",
-        "type" : "FUNNEL"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "7cd09ee5-c8d0-3e11-bd1a-8f799a697352",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "failure" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "d3699163-0196-1000-35bc-1f65b005398d",
-        "name" : "LookupRecord",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 0
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ {
-        "x" : -624.0,
-        "y" : 392.0
-      } ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "d35a5d5a-0196-1000-9feb-ee6d1e731d35",
-        "name" : "Funnel",
-        "type" : "FUNNEL"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "71240cd8-b194-33a5-af42-eda4c6ffb64d",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "unmatched" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "d35a5d59-0196-1000-6059-7670693641fb",
         "name" : "LookupRecord",
         "type" : "PROCESSOR"
       },
@@ -623,10 +494,7 @@
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
-      "bends" : [ {
-        "x" : -688.0,
-        "y" : 736.0
-      } ],
+      "bends" : [ ],
       "componentType" : "CONNECTION",
       "destination" : {
         "comments" : "",
@@ -637,48 +505,18 @@
       },
       "flowFileExpiration" : "0 sec",
       "groupIdentifier" : "flow-contents-group",
-      "identifier" : "a3bb98de-b7ee-361c-848d-4c31de3f746c",
+      "identifier" : "b0d37600-b7be-3a5e-80b1-7c8377099dbf",
       "labelIndex" : 0,
       "loadBalanceCompression" : "DO_NOT_COMPRESS",
       "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
       "name" : "",
       "partitioningAttribute" : "",
       "prioritizers" : [ ],
-      "selectedRelationships" : [ "unmatched" ],
+      "selectedRelationships" : [ "failure", "unmatched" ],
       "source" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "d36f8339-0196-1000-394a-c4bca9cc561b",
-        "name" : "LookupRecord order_id -> customer_id",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 0
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "c048393b-0196-1000-d3fb-7fdd16551144",
-        "name" : "Funnel",
-        "type" : "FUNNEL"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "47a11f60-ebe4-30e4-b7e3-6b626109987a",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "failure" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "c049e072-0196-1000-f4b4-94d7cc1378bb",
+        "id" : "c057dfff-0196-1000-0d1c-05518afc9a97",
         "name" : "LookupRecord",
         "type" : "PROCESSOR"
       },
@@ -691,9 +529,9 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "c048393d-0196-1000-178b-d3b6bb05b56e",
-        "name" : "Funnel",
-        "type" : "FUNNEL"
+        "id" : "d4aa9c24-0196-1000-e4f9-a0e61def0f70",
+        "name" : "LookupRecord",
+        "type" : "PROCESSOR"
       },
       "flowFileExpiration" : "0 sec",
       "groupIdentifier" : "flow-contents-group",
@@ -720,8 +558,8 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "d36f8339-0196-1000-394a-c4bca9cc561b",
-        "name" : "LookupRecord order_id -> customer_id",
+        "id" : "d4797da1-0196-1000-d417-0078398cdd7a",
+        "name" : "LookupRecord",
         "type" : "PROCESSOR"
       },
       "flowFileExpiration" : "0 sec",
@@ -738,6 +576,66 @@
         "comments" : "",
         "groupId" : "flow-contents-group",
         "id" : "d3699163-0196-1000-35bc-1f65b005398d",
+        "name" : "LookupRecord",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "d35a5d5a-0196-1000-9feb-ee6d1e731d35",
+        "name" : "Funnel",
+        "type" : "FUNNEL"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "d9fb6299-b2db-3d17-806d-b65788f5f242",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure", "unmatched" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c049e072-0196-1000-f4b4-94d7cc1378bb",
+        "name" : "LookupRecord",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c0483941-0196-1000-b971-124f6b21af72",
+        "name" : "Funnel",
+        "type" : "FUNNEL"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "194d5e36-64c1-3cb9-8e4d-88387a2e659a",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure", "unmatched" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "d4aa9c24-0196-1000-e4f9-a0e61def0f70",
         "name" : "LookupRecord",
         "type" : "PROCESSOR"
       },
@@ -768,36 +666,6 @@
         "comments" : "",
         "groupId" : "flow-contents-group",
         "id" : "c049e072-0196-1000-f4b4-94d7cc1378bb",
-        "name" : "LookupRecord",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 0
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "f21b1eae-494f-392d-9c02-9401a052d388",
-        "name" : "Funnel",
-        "type" : "FUNNEL"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "56737f00-4e44-3187-a629-ff162ea024e3",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "failure" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "c057dfff-0196-1000-0d1c-05518afc9a97",
         "name" : "LookupRecord",
         "type" : "PROCESSOR"
       },
@@ -870,6 +738,36 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "d35a5d5a-0196-1000-9feb-ee6d1e731d35",
+        "name" : "Funnel",
+        "type" : "FUNNEL"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "db15bf99-7df6-3b8d-b553-4e2754a27d05",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure", "unmatched" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "d3699163-0196-1000-35bc-1f65b005398d",
+        "name" : "LookupRecord",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "19254256-e87a-3d55-b817-69f4ec49ebe7",
         "name" : "PutElasticsearchRecord",
         "type" : "PROCESSOR"
@@ -929,6 +827,66 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "c0483938-0196-1000-50ee-277b458a1b68",
+        "name" : "QueryRecord",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "d7e02809-acd5-3c67-8cda-fa8eccf8e928",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "matched" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "d4aa9c24-0196-1000-e4f9-a0e61def0f70",
+        "name" : "LookupRecord",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "d35a5d5a-0196-1000-9feb-ee6d1e731d35",
+        "name" : "Funnel",
+        "type" : "FUNNEL"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "42dc93e6-ead6-3205-af37-d376dc62f0ef",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure", "unmatched" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "d4797da1-0196-1000-d417-0078398cdd7a",
+        "name" : "LookupRecord",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "c0483939-0196-1000-3e48-6aae15d4c610",
         "name" : "QueryRecord",
         "type" : "PROCESSOR"
@@ -954,39 +912,6 @@
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
-      "bends" : [ {
-        "x" : -672.0,
-        "y" : 1536.0
-      } ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "f21b1eae-494f-392d-9c02-9401a052d388",
-        "name" : "Funnel",
-        "type" : "FUNNEL"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "eff3ad65-9bb4-3ff6-9af9-2f7c31703365",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "unmatched" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "c057dfff-0196-1000-0d1c-05518afc9a97",
-        "name" : "LookupRecord",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 0
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
       "bends" : [ ],
       "componentType" : "CONNECTION",
       "destination" : {
@@ -998,49 +923,49 @@
       },
       "flowFileExpiration" : "0 sec",
       "groupIdentifier" : "flow-contents-group",
-      "identifier" : "379f840b-85a3-35bb-8630-89b5e5c45ebf",
+      "identifier" : "ed37cecb-30dc-3d62-8fdf-67bd073eb342",
       "labelIndex" : 0,
       "loadBalanceCompression" : "DO_NOT_COMPRESS",
       "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
       "name" : "",
       "partitioningAttribute" : "",
       "prioritizers" : [ ],
-      "selectedRelationships" : [ "unmatched" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "d3699163-0196-1000-35bc-1f65b005398d",
-        "name" : "LookupRecord",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 0
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "d35a5d5a-0196-1000-9feb-ee6d1e731d35",
-        "name" : "Funnel",
-        "type" : "FUNNEL"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "e747d899-7689-314f-a40e-3019be09880b",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "failure" ],
+      "selectedRelationships" : [ "failure", "unmatched" ],
       "source" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
         "id" : "d36f8339-0196-1000-394a-c4bca9cc561b",
         "name" : "LookupRecord order_id -> customer_id",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "d36f8339-0196-1000-394a-c4bca9cc561b",
+        "name" : "LookupRecord order_id -> customer_id",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "b6709ce9-f33a-3827-8218-d003aac96fdd",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "matched" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "d4797da1-0196-1000-d417-0078398cdd7a",
+        "name" : "LookupRecord",
         "type" : "PROCESSOR"
       },
       "zIndex" : 0
@@ -1581,13 +1506,277 @@
       } ],
       "groupIdentifier" : "flow-contents-group",
       "identifier" : "a381ec50-ebf7-34d8-b24c-6fb83722c5ba",
-      "name" : "SimpleCsvFileLookupService (country code)",
+      "name" : "SimpleCsvFileLookupService (country code -> name)",
       "properties" : {
         "Escape Character" : "\\",
         "lookup-key-column" : "Code",
         "csv-file" : "/opt/nifi/nifi-current/input/countries.csv",
         "Trim Fields" : "true",
         "lookup-value-column" : "Name",
+        "CSV Format" : "default",
+        "ignore-duplicates" : "true",
+        "Quote Character" : "\"",
+        "Value Separator" : ",",
+        "Character Set" : "UTF-8",
+        "Quote Mode" : "MINIMAL"
+      },
+      "propertyDescriptors" : {
+        "Escape Character" : {
+          "displayName" : "Escape Character",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Escape Character",
+          "sensitive" : false
+        },
+        "lookup-key-column" : {
+          "displayName" : "Lookup Key Column",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "lookup-key-column",
+          "sensitive" : false
+        },
+        "csv-file" : {
+          "displayName" : "CSV File",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "csv-file",
+          "resourceDefinition" : {
+            "cardinality" : "SINGLE",
+            "resourceTypes" : [ "FILE" ]
+          },
+          "sensitive" : false
+        },
+        "Trim Fields" : {
+          "displayName" : "Trim Fields",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Trim Fields",
+          "sensitive" : false
+        },
+        "lookup-value-column" : {
+          "displayName" : "Lookup Value Column",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "lookup-value-column",
+          "sensitive" : false
+        },
+        "CSV Format" : {
+          "displayName" : "CSV Format",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "CSV Format",
+          "sensitive" : false
+        },
+        "ignore-duplicates" : {
+          "displayName" : "Ignore Duplicates",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "ignore-duplicates",
+          "sensitive" : false
+        },
+        "Quote Character" : {
+          "displayName" : "Quote Character",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Quote Character",
+          "sensitive" : false
+        },
+        "Comment Marker" : {
+          "displayName" : "Comment Marker",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Comment Marker",
+          "sensitive" : false
+        },
+        "Value Separator" : {
+          "displayName" : "Value Separator",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Value Separator",
+          "sensitive" : false
+        },
+        "Character Set" : {
+          "displayName" : "Character Set",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Character Set",
+          "sensitive" : false
+        },
+        "Quote Mode" : {
+          "displayName" : "Quote Mode",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Quote Mode",
+          "sensitive" : false
+        }
+      },
+      "scheduledState" : "DISABLED",
+      "type" : "org.apache.nifi.lookup.SimpleCsvFileLookupService"
+    }, {
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-lookup-services-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.3.0"
+      },
+      "comments" : "",
+      "componentType" : "CONTROLLER_SERVICE",
+      "controllerServiceApis" : [ {
+        "bundle" : {
+          "artifact" : "nifi-standard-services-api-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.3.0"
+        },
+        "type" : "org.apache.nifi.lookup.StringLookupService"
+      }, {
+        "bundle" : {
+          "artifact" : "nifi-standard-services-api-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.3.0"
+        },
+        "type" : "org.apache.nifi.lookup.LookupService"
+      } ],
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "b2de14b7-b166-38c8-b661-061fa87374e6",
+      "name" : "SimpleCsvFileLookupService  (country -> country code )",
+      "properties" : {
+        "Escape Character" : "\\",
+        "lookup-key-column" : "Name",
+        "csv-file" : "/opt/nifi/nifi-current/input/countries.csv",
+        "Trim Fields" : "true",
+        "lookup-value-column" : "Code",
+        "CSV Format" : "default",
+        "ignore-duplicates" : "true",
+        "Quote Character" : "\"",
+        "Value Separator" : ",",
+        "Character Set" : "UTF-8",
+        "Quote Mode" : "MINIMAL"
+      },
+      "propertyDescriptors" : {
+        "Escape Character" : {
+          "displayName" : "Escape Character",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Escape Character",
+          "sensitive" : false
+        },
+        "lookup-key-column" : {
+          "displayName" : "Lookup Key Column",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "lookup-key-column",
+          "sensitive" : false
+        },
+        "csv-file" : {
+          "displayName" : "CSV File",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "csv-file",
+          "resourceDefinition" : {
+            "cardinality" : "SINGLE",
+            "resourceTypes" : [ "FILE" ]
+          },
+          "sensitive" : false
+        },
+        "Trim Fields" : {
+          "displayName" : "Trim Fields",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Trim Fields",
+          "sensitive" : false
+        },
+        "lookup-value-column" : {
+          "displayName" : "Lookup Value Column",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "lookup-value-column",
+          "sensitive" : false
+        },
+        "CSV Format" : {
+          "displayName" : "CSV Format",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "CSV Format",
+          "sensitive" : false
+        },
+        "ignore-duplicates" : {
+          "displayName" : "Ignore Duplicates",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "ignore-duplicates",
+          "sensitive" : false
+        },
+        "Quote Character" : {
+          "displayName" : "Quote Character",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Quote Character",
+          "sensitive" : false
+        },
+        "Comment Marker" : {
+          "displayName" : "Comment Marker",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Comment Marker",
+          "sensitive" : false
+        },
+        "Value Separator" : {
+          "displayName" : "Value Separator",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Value Separator",
+          "sensitive" : false
+        },
+        "Character Set" : {
+          "displayName" : "Character Set",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Character Set",
+          "sensitive" : false
+        },
+        "Quote Mode" : {
+          "displayName" : "Quote Mode",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Quote Mode",
+          "sensitive" : false
+        }
+      },
+      "scheduledState" : "DISABLED",
+      "type" : "org.apache.nifi.lookup.SimpleCsvFileLookupService"
+    }, {
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-lookup-services-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.3.0"
+      },
+      "comments" : "",
+      "componentType" : "CONTROLLER_SERVICE",
+      "controllerServiceApis" : [ {
+        "bundle" : {
+          "artifact" : "nifi-standard-services-api-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.3.0"
+        },
+        "type" : "org.apache.nifi.lookup.StringLookupService"
+      }, {
+        "bundle" : {
+          "artifact" : "nifi-standard-services-api-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.3.0"
+        },
+        "type" : "org.apache.nifi.lookup.LookupService"
+      } ],
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "fa502f1b-d308-3e35-bcb5-d7af8fe24e8b",
+      "name" : "SimpleCsvFileLookupService (category translation)",
+      "properties" : {
+        "Escape Character" : "\\",
+        "lookup-key-column" : "product_category_name",
+        "csv-file" : "/opt/nifi/nifi-current/input/olist/product_category_name_translation.csv",
+        "Trim Fields" : "true",
+        "lookup-value-column" : "product_category_name_english",
         "CSV Format" : "default",
         "ignore-duplicates" : "true",
         "Quote Character" : "\"",
@@ -1715,6 +1904,14 @@
     "funnels" : [ {
       "componentType" : "FUNNEL",
       "groupIdentifier" : "flow-contents-group",
+      "identifier" : "9c845d44-6e69-3502-b4fe-a5866777d6b1",
+      "position" : {
+        "x" : 2064.0,
+        "y" : -304.0
+      }
+    }, {
+      "componentType" : "FUNNEL",
+      "groupIdentifier" : "flow-contents-group",
       "identifier" : "46e96468-4c7f-31d6-bae5-0e073746e78c",
       "position" : {
         "x" : -1256.0,
@@ -1723,18 +1920,18 @@
     }, {
       "componentType" : "FUNNEL",
       "groupIdentifier" : "flow-contents-group",
-      "identifier" : "c048393b-0196-1000-d3fb-7fdd16551144",
+      "identifier" : "d35a5d5a-0196-1000-9feb-ee6d1e731d35",
       "position" : {
-        "x" : -904.0,
-        "y" : 1152.0
+        "x" : -952.0,
+        "y" : 760.0
       }
     }, {
       "componentType" : "FUNNEL",
       "groupIdentifier" : "flow-contents-group",
-      "identifier" : "d35a5d5a-0196-1000-9feb-ee6d1e731d35",
+      "identifier" : "53bc0e73-214b-30d9-b04a-bca3eec0ce34",
       "position" : {
-        "x" : -920.0,
-        "y" : 600.0
+        "x" : 304.0,
+        "y" : 1688.0
       }
     }, {
       "componentType" : "FUNNEL",
@@ -1749,56 +1946,8 @@
       "groupIdentifier" : "flow-contents-group",
       "identifier" : "c048393e-0196-1000-e675-e7cc15903631",
       "position" : {
-        "x" : -432.0,
-        "y" : -168.0
-      }
-    }, {
-      "componentType" : "FUNNEL",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "c0483941-0196-1000-b971-124f6b21af72",
-      "position" : {
-        "x" : 632.0,
-        "y" : -160.0
-      }
-    }, {
-      "componentType" : "FUNNEL",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "ce12efeb-a694-3837-8852-8bdcb2c590d0",
-      "position" : {
-        "x" : 2376.0,
-        "y" : -144.0
-      }
-    }, {
-      "componentType" : "FUNNEL",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "f21b1eae-494f-392d-9c02-9401a052d388",
-      "position" : {
-        "x" : -904.0,
-        "y" : 1440.0
-      }
-    }, {
-      "componentType" : "FUNNEL",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "9c845d44-6e69-3502-b4fe-a5866777d6b1",
-      "position" : {
-        "x" : 2064.0,
-        "y" : -304.0
-      }
-    }, {
-      "componentType" : "FUNNEL",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "53bc0e73-214b-30d9-b04a-bca3eec0ce34",
-      "position" : {
-        "x" : 240.0,
-        "y" : 1472.0
-      }
-    }, {
-      "componentType" : "FUNNEL",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "c048393d-0196-1000-178b-d3b6bb05b56e",
-      "position" : {
-        "x" : 120.0,
-        "y" : -384.0
+        "x" : -816.0,
+        "y" : -176.0
       }
     }, {
       "componentType" : "FUNNEL",
@@ -1811,10 +1960,26 @@
     }, {
       "componentType" : "FUNNEL",
       "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c0483941-0196-1000-b971-124f6b21af72",
+      "position" : {
+        "x" : 232.0,
+        "y" : -112.0
+      }
+    }, {
+      "componentType" : "FUNNEL",
+      "groupIdentifier" : "flow-contents-group",
       "identifier" : "bf0d4b16-7f9f-3b99-bb15-c290e123ddee",
       "position" : {
         "x" : -768.0,
         "y" : 240.0
+      }
+    }, {
+      "componentType" : "FUNNEL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "ce12efeb-a694-3837-8852-8bdcb2c590d0",
+      "position" : {
+        "x" : 2376.0,
+        "y" : -144.0
       }
     }, {
       "componentType" : "FUNNEL",
@@ -1829,8 +1994,8 @@
       "groupIdentifier" : "flow-contents-group",
       "identifier" : "c048393f-0196-1000-f5cd-19b8f287f494",
       "position" : {
-        "x" : 1240.0,
-        "y" : -88.0
+        "x" : 1232.0,
+        "y" : -136.0
       }
     } ],
     "identifier" : "flow-contents-group",
@@ -1842,13 +2007,28 @@
       "identifier" : "c0483945-0196-1000-f6ce-95d7aea748f7",
       "label" : "ecommerce",
       "position" : {
-        "x" : -576.0,
-        "y" : -520.0
+        "x" : -952.0,
+        "y" : -496.0
       },
       "style" : {
         "font-size" : "12px"
       },
       "width" : 136.0,
+      "zIndex" : 0
+    }, {
+      "componentType" : "LABEL",
+      "groupIdentifier" : "flow-contents-group",
+      "height" : 56.0,
+      "identifier" : "d479890e-0196-1000-4c69-dbc9bcb7e06a",
+      "label" : "5. lookup country_code -> country",
+      "position" : {
+        "x" : -392.0,
+        "y" : 1648.0
+      },
+      "style" : {
+        "font-size" : "12px"
+      },
+      "width" : 344.0,
       "zIndex" : 0
     }, {
       "componentType" : "LABEL",
@@ -1887,8 +2067,8 @@
       "identifier" : "c5cc536f-b9ba-39b6-bec5-cc3eeb6fa3ee",
       "label" : "3. lookup order_id -> customer_id",
       "position" : {
-        "x" : -432.0,
-        "y" : 848.0
+        "x" : -424.0,
+        "y" : 1104.0
       },
       "style" : {
         "font-size" : "12px"
@@ -1915,10 +2095,10 @@
       "groupIdentifier" : "flow-contents-group",
       "height" : 56.0,
       "identifier" : "bd522163-a0d3-35ad-8f38-1ec2270c938b",
-      "label" : "5. lookup country_code -> country",
+      "label" : "2. lookup category translation",
       "position" : {
-        "x" : -400.0,
-        "y" : 1408.0
+        "x" : -432.0,
+        "y" : 808.0
       },
       "style" : {
         "font-size" : "12px"
@@ -1947,8 +2127,8 @@
       "identifier" : "c056cc5c-0196-1000-37f4-2e935ef55863",
       "label" : "4. lookup customer_id -> country_code\n\n",
       "position" : {
-        "x" : -416.0,
-        "y" : 1136.0
+        "x" : -408.0,
+        "y" : 1384.0
       },
       "style" : {
         "font-size" : "12px"
@@ -2761,8 +2941,8 @@
       } ],
       "parameterContextName" : "ecommerce",
       "position" : {
-        "x" : -568.0,
-        "y" : -456.0
+        "x" : -952.0,
+        "y" : -464.0
       },
       "processGroups" : [ ],
       "processors" : [ {
@@ -4146,7 +4326,7 @@
           "Minimum File Age" : "0 sec",
           "et-initial-listing-target" : "all",
           "max-listing-time" : "3 mins",
-          "et-time-window" : "2 minutes",
+          "et-time-window" : "3 hours",
           "et-node-identifier" : "${hostname()}",
           "Recurse Subdirectories" : "true",
           "File Filter" : "[^\\.].*",
@@ -4356,7 +4536,7 @@
       "properties" : {
         "dbf-default-precision" : "10",
         "record-writer" : "d0a8c94c-3d27-331b-81b7-893c8400b282",
-        "query" : "SELECT \n\"Transaction_ID\" as \"order_id\", \n\"Transaction_Date\" as \"date\",\n\"Purchase_Amount\" as \"payment\",\n\"Product_Category\" as \"category\",\n\"Country\" as \"country\"\nFROM FLOWFILE",
+        "query" : "SELECT \n\"Transaction_ID\" as \"order_id\", \n\"Transaction_Date\" as \"date\",\n\"Purchase_Amount\" as \"payment\",\n\"Product_Category\" as \"category\",\n\"Country\" as \"country\",\n\"country_code\" as \"country_code\"\nFROM FLOWFILE",
         "record-reader" : "93211762-d357-3bec-97bc-2576cf5ee004",
         "include-zero-record-flowfiles" : "true",
         "dbf-default-scale" : "0"
@@ -4664,8 +4844,8 @@
       "name" : "LookupRecord",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -400.0,
-        "y" : 1432.0
+        "x" : -392.0,
+        "y" : 1680.0
       },
       "properties" : {
         "result-contents" : "insert-entire-record",
@@ -4677,7 +4857,122 @@
         "record-reader" : "93211762-d357-3bec-97bc-2576cf5ee004",
         "lookup-service" : "a381ec50-ebf7-34d8-b24c-6fb83722c5ba",
         "record-update-strategy" : "use-property",
-        "key" : "/country"
+        "key" : "/country_code"
+      },
+      "propertyDescriptors" : {
+        "result-contents" : {
+          "displayName" : "Record Result Contents",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "result-contents",
+          "sensitive" : false
+        },
+        "routing-strategy" : {
+          "displayName" : "Routing Strategy",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "routing-strategy",
+          "sensitive" : false
+        },
+        "Root Record Path" : {
+          "displayName" : "Root Record Path",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Root Record Path",
+          "sensitive" : false
+        },
+        "record-path-lookup-miss-result-cache-size" : {
+          "displayName" : "Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "record-path-lookup-miss-result-cache-size",
+          "sensitive" : false
+        },
+        "result-record-path" : {
+          "displayName" : "Result RecordPath",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "result-record-path",
+          "sensitive" : false
+        },
+        "record-writer" : {
+          "displayName" : "Record Writer",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "record-writer",
+          "sensitive" : false
+        },
+        "record-reader" : {
+          "displayName" : "Record Reader",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "record-reader",
+          "sensitive" : false
+        },
+        "lookup-service" : {
+          "displayName" : "Lookup Service",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "lookup-service",
+          "sensitive" : false
+        },
+        "record-update-strategy" : {
+          "displayName" : "Record Update Strategy",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "record-update-strategy",
+          "sensitive" : false
+        },
+        "key" : {
+          "displayName" : "key",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "key",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.LookupRecord",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.3.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "d4797da1-0196-1000-d417-0078398cdd7a",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "LookupRecord",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : -424.0,
+        "y" : 832.0
+      },
+      "properties" : {
+        "result-contents" : "insert-entire-record",
+        "routing-strategy" : "route-to-matched-unmatched",
+        "Root Record Path" : "/",
+        "record-path-lookup-miss-result-cache-size" : "0",
+        "result-record-path" : "/category",
+        "record-writer" : "d0a8c94c-3d27-331b-81b7-893c8400b282",
+        "record-reader" : "93211762-d357-3bec-97bc-2576cf5ee004",
+        "lookup-service" : "fa502f1b-d308-3e35-bcb5-d7af8fe24e8b",
+        "record-update-strategy" : "use-property",
+        "key" : "/category"
       },
       "propertyDescriptors" : {
         "result-contents" : {
@@ -4894,15 +5189,15 @@
       "name" : "LookupRecord",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -416.0,
-        "y" : 1168.0
+        "x" : -408.0,
+        "y" : 1416.0
       },
       "properties" : {
         "result-contents" : "insert-entire-record",
         "routing-strategy" : "route-to-matched-unmatched",
         "Root Record Path" : "/",
         "record-path-lookup-miss-result-cache-size" : "0",
-        "result-record-path" : "/country",
+        "result-record-path" : "/country_code",
         "record-writer" : "d0a8c94c-3d27-331b-81b7-893c8400b282",
         "record-reader" : "93211762-d357-3bec-97bc-2576cf5ee004",
         "lookup-service" : "894f6c63-372b-32da-aeda-d5df2367b147",
@@ -5010,7 +5305,7 @@
       "penaltyDuration" : "30 sec",
       "position" : {
         "x" : -432.0,
-        "y" : 880.0
+        "y" : 1128.0
       },
       "properties" : {
         "result-contents" : "insert-entire-record",
@@ -5234,6 +5529,121 @@
       "concurrentlySchedulableTaskCount" : 1,
       "executionNode" : "ALL",
       "groupIdentifier" : "flow-contents-group",
+      "identifier" : "d4aa9c24-0196-1000-e4f9-a0e61def0f70",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "LookupRecord",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : -264.0,
+        "y" : -440.0
+      },
+      "properties" : {
+        "result-contents" : "insert-entire-record",
+        "routing-strategy" : "route-to-matched-unmatched",
+        "Root Record Path" : "/",
+        "record-path-lookup-miss-result-cache-size" : "0",
+        "result-record-path" : "/country_code",
+        "record-writer" : "d0a8c94c-3d27-331b-81b7-893c8400b282",
+        "record-reader" : "93211762-d357-3bec-97bc-2576cf5ee004",
+        "lookup-service" : "b2de14b7-b166-38c8-b661-061fa87374e6",
+        "record-update-strategy" : "use-property",
+        "key" : "/Country"
+      },
+      "propertyDescriptors" : {
+        "result-contents" : {
+          "displayName" : "Record Result Contents",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "result-contents",
+          "sensitive" : false
+        },
+        "routing-strategy" : {
+          "displayName" : "Routing Strategy",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "routing-strategy",
+          "sensitive" : false
+        },
+        "Root Record Path" : {
+          "displayName" : "Root Record Path",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Root Record Path",
+          "sensitive" : false
+        },
+        "record-path-lookup-miss-result-cache-size" : {
+          "displayName" : "Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "record-path-lookup-miss-result-cache-size",
+          "sensitive" : false
+        },
+        "result-record-path" : {
+          "displayName" : "Result RecordPath",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "result-record-path",
+          "sensitive" : false
+        },
+        "record-writer" : {
+          "displayName" : "Record Writer",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "record-writer",
+          "sensitive" : false
+        },
+        "record-reader" : {
+          "displayName" : "Record Reader",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "record-reader",
+          "sensitive" : false
+        },
+        "lookup-service" : {
+          "displayName" : "Lookup Service",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "lookup-service",
+          "sensitive" : false
+        },
+        "record-update-strategy" : {
+          "displayName" : "Record Update Strategy",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "record-update-strategy",
+          "sensitive" : false
+        },
+        "key" : {
+          "displayName" : "key",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "key",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.LookupRecord",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.3.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
       "identifier" : "c0483939-0196-1000-3e48-6aae15d4c610",
       "maxBackoffPeriod" : "10 mins",
       "name" : "QueryRecord",
@@ -5245,7 +5655,7 @@
       "properties" : {
         "dbf-default-precision" : "10",
         "record-writer" : "d0a8c94c-3d27-331b-81b7-893c8400b282",
-        "query" : "SELECT \n\"order_item_id\" as \"order_id\", \nSUBSTRING(\"shipping_limit_date\", 1, 10) as \"date\",\n\"price\" * 5.64 as \"payment\",\n\"category\",\n\"country\"\nFROM FLOWFILE\nWHERE \"order_status\" = 'delivered' \nOR \"order_status\" = 'shipped' ",
+        "query" : "SELECT \n\"order_id\" || '-' || \"order_item_id\" as \"order_id\", \nSUBSTRING(\"shipping_limit_date\", 1, 10) as \"date\",\n\"price\" * 5.64 as \"payment\",\n\"category\",\n\"country\",\n\"country_code\"\nFROM FLOWFILE\nWHERE \"order_status\" = 'delivered' \nOR \"order_status\" = 'shipped' ",
         "record-reader" : "93211762-d357-3bec-97bc-2576cf5ee004",
         "include-zero-record-flowfiles" : "true",
         "dbf-default-scale" : "0"
