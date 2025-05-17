@@ -1015,14 +1015,14 @@
           "group" : "org.apache.nifi",
           "version" : "2.3.0"
         },
-        "type" : "org.apache.nifi.lookup.StringLookupService"
+        "type" : "org.apache.nifi.lookup.LookupService"
       }, {
         "bundle" : {
           "artifact" : "nifi-standard-services-api-nar",
           "group" : "org.apache.nifi",
           "version" : "2.3.0"
         },
-        "type" : "org.apache.nifi.lookup.LookupService"
+        "type" : "org.apache.nifi.lookup.StringLookupService"
       } ],
       "groupIdentifier" : "flow-contents-group",
       "identifier" : "60e841e0-c0de-3709-8a18-d74466f77dd6",
@@ -1363,14 +1363,14 @@
           "group" : "org.apache.nifi",
           "version" : "2.3.0"
         },
-        "type" : "org.apache.nifi.lookup.StringLookupService"
+        "type" : "org.apache.nifi.lookup.LookupService"
       }, {
         "bundle" : {
           "artifact" : "nifi-standard-services-api-nar",
           "group" : "org.apache.nifi",
           "version" : "2.3.0"
         },
-        "type" : "org.apache.nifi.lookup.LookupService"
+        "type" : "org.apache.nifi.lookup.StringLookupService"
       } ],
       "groupIdentifier" : "flow-contents-group",
       "identifier" : "f4c24ccd-31ac-3ae0-8fa2-f9b85d74d42d",
@@ -1495,14 +1495,14 @@
           "group" : "org.apache.nifi",
           "version" : "2.3.0"
         },
-        "type" : "org.apache.nifi.lookup.StringLookupService"
+        "type" : "org.apache.nifi.lookup.LookupService"
       }, {
         "bundle" : {
           "artifact" : "nifi-standard-services-api-nar",
           "group" : "org.apache.nifi",
           "version" : "2.3.0"
         },
-        "type" : "org.apache.nifi.lookup.LookupService"
+        "type" : "org.apache.nifi.lookup.StringLookupService"
       } ],
       "groupIdentifier" : "flow-contents-group",
       "identifier" : "a381ec50-ebf7-34d8-b24c-6fb83722c5ba",
@@ -1627,14 +1627,14 @@
           "group" : "org.apache.nifi",
           "version" : "2.3.0"
         },
-        "type" : "org.apache.nifi.lookup.StringLookupService"
+        "type" : "org.apache.nifi.lookup.LookupService"
       }, {
         "bundle" : {
           "artifact" : "nifi-standard-services-api-nar",
           "group" : "org.apache.nifi",
           "version" : "2.3.0"
         },
-        "type" : "org.apache.nifi.lookup.LookupService"
+        "type" : "org.apache.nifi.lookup.StringLookupService"
       } ],
       "groupIdentifier" : "flow-contents-group",
       "identifier" : "b2de14b7-b166-38c8-b661-061fa87374e6",
@@ -1759,14 +1759,14 @@
           "group" : "org.apache.nifi",
           "version" : "2.3.0"
         },
-        "type" : "org.apache.nifi.lookup.StringLookupService"
+        "type" : "org.apache.nifi.lookup.LookupService"
       }, {
         "bundle" : {
           "artifact" : "nifi-standard-services-api-nar",
           "group" : "org.apache.nifi",
           "version" : "2.3.0"
         },
-        "type" : "org.apache.nifi.lookup.LookupService"
+        "type" : "org.apache.nifi.lookup.StringLookupService"
       } ],
       "groupIdentifier" : "flow-contents-group",
       "identifier" : "fa502f1b-d308-3e35-bcb5-d7af8fe24e8b",
@@ -1920,18 +1920,18 @@
     }, {
       "componentType" : "FUNNEL",
       "groupIdentifier" : "flow-contents-group",
-      "identifier" : "d35a5d5a-0196-1000-9feb-ee6d1e731d35",
-      "position" : {
-        "x" : -952.0,
-        "y" : 760.0
-      }
-    }, {
-      "componentType" : "FUNNEL",
-      "groupIdentifier" : "flow-contents-group",
       "identifier" : "53bc0e73-214b-30d9-b04a-bca3eec0ce34",
       "position" : {
         "x" : 304.0,
         "y" : 1688.0
+      }
+    }, {
+      "componentType" : "FUNNEL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "d35a5d5a-0196-1000-9feb-ee6d1e731d35",
+      "position" : {
+        "x" : -952.0,
+        "y" : 760.0
       }
     }, {
       "componentType" : "FUNNEL",
@@ -1968,18 +1968,18 @@
     }, {
       "componentType" : "FUNNEL",
       "groupIdentifier" : "flow-contents-group",
-      "identifier" : "bf0d4b16-7f9f-3b99-bb15-c290e123ddee",
-      "position" : {
-        "x" : -768.0,
-        "y" : 240.0
-      }
-    }, {
-      "componentType" : "FUNNEL",
-      "groupIdentifier" : "flow-contents-group",
       "identifier" : "ce12efeb-a694-3837-8852-8bdcb2c590d0",
       "position" : {
         "x" : 2376.0,
         "y" : -144.0
+      }
+    }, {
+      "componentType" : "FUNNEL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "bf0d4b16-7f9f-3b99-bb15-c290e123ddee",
+      "position" : {
+        "x" : -768.0,
+        "y" : 240.0
       }
     }, {
       "componentType" : "FUNNEL",
@@ -2003,21 +2003,6 @@
     "labels" : [ {
       "componentType" : "LABEL",
       "groupIdentifier" : "flow-contents-group",
-      "height" : 40.0,
-      "identifier" : "c0483945-0196-1000-f6ce-95d7aea748f7",
-      "label" : "ecommerce",
-      "position" : {
-        "x" : -952.0,
-        "y" : -496.0
-      },
-      "style" : {
-        "font-size" : "12px"
-      },
-      "width" : 136.0,
-      "zIndex" : 0
-    }, {
-      "componentType" : "LABEL",
-      "groupIdentifier" : "flow-contents-group",
       "height" : 56.0,
       "identifier" : "d479890e-0196-1000-4c69-dbc9bcb7e06a",
       "label" : "5. lookup country_code -> country",
@@ -2029,6 +2014,21 @@
         "font-size" : "12px"
       },
       "width" : 344.0,
+      "zIndex" : 0
+    }, {
+      "componentType" : "LABEL",
+      "groupIdentifier" : "flow-contents-group",
+      "height" : 40.0,
+      "identifier" : "c0483945-0196-1000-f6ce-95d7aea748f7",
+      "label" : "ecommerce",
+      "position" : {
+        "x" : -952.0,
+        "y" : -496.0
+      },
+      "style" : {
+        "font-size" : "12px"
+      },
+      "width" : 136.0,
       "zIndex" : 0
     }, {
       "componentType" : "LABEL",
@@ -2108,21 +2108,6 @@
     }, {
       "componentType" : "LABEL",
       "groupIdentifier" : "flow-contents-group",
-      "height" : 64.0,
-      "identifier" : "d361ca46-0196-1000-1738-bd7fddfd9192",
-      "label" : "read order_items",
-      "position" : {
-        "x" : -1408.0,
-        "y" : 120.0
-      },
-      "style" : {
-        "font-size" : "12px"
-      },
-      "width" : 208.0,
-      "zIndex" : 0
-    }, {
-      "componentType" : "LABEL",
-      "groupIdentifier" : "flow-contents-group",
       "height" : 56.0,
       "identifier" : "c056cc5c-0196-1000-37f4-2e935ef55863",
       "label" : "4. lookup customer_id -> country_code\n\n",
@@ -2134,6 +2119,21 @@
         "font-size" : "12px"
       },
       "width" : 352.0,
+      "zIndex" : 0
+    }, {
+      "componentType" : "LABEL",
+      "groupIdentifier" : "flow-contents-group",
+      "height" : 64.0,
+      "identifier" : "d361ca46-0196-1000-1738-bd7fddfd9192",
+      "label" : "read order_items",
+      "position" : {
+        "x" : -1408.0,
+        "y" : 120.0
+      },
+      "style" : {
+        "font-size" : "12px"
+      },
+      "width" : 208.0,
       "zIndex" : 0
     }, {
       "componentType" : "LABEL",
@@ -2933,8 +2933,8 @@
         "name" : "fail",
         "portFunction" : "FAILURE",
         "position" : {
-          "x" : -16.0,
-          "y" : -48.0
+          "x" : -136.0,
+          "y" : -80.0
         },
         "scheduledState" : "ENABLED",
         "type" : "OUTPUT_PORT"
@@ -4091,12 +4091,12 @@
         "componentType" : "OUTPUT_PORT",
         "concurrentlySchedulableTaskCount" : 1,
         "groupIdentifier" : "d3561036-0196-1000-9ebc-2d53852338ec",
-        "identifier" : "d356103e-0196-1000-e0cd-73aaa410ce53",
-        "name" : "records",
-        "portFunction" : "STANDARD",
+        "identifier" : "d356103d-0196-1000-7aed-8d308e886785",
+        "name" : "fail",
+        "portFunction" : "FAILURE",
         "position" : {
-          "x" : -840.0,
-          "y" : 312.0
+          "x" : -16.0,
+          "y" : -48.0
         },
         "scheduledState" : "ENABLED",
         "type" : "OUTPUT_PORT"
@@ -4105,12 +4105,12 @@
         "componentType" : "OUTPUT_PORT",
         "concurrentlySchedulableTaskCount" : 1,
         "groupIdentifier" : "d3561036-0196-1000-9ebc-2d53852338ec",
-        "identifier" : "d356103d-0196-1000-7aed-8d308e886785",
-        "name" : "fail",
-        "portFunction" : "FAILURE",
+        "identifier" : "d356103e-0196-1000-e0cd-73aaa410ce53",
+        "name" : "records",
+        "portFunction" : "STANDARD",
         "position" : {
-          "x" : -16.0,
-          "y" : -48.0
+          "x" : -840.0,
+          "y" : 312.0
         },
         "scheduledState" : "ENABLED",
         "type" : "OUTPUT_PORT"
